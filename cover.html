@@ -1,0 +1,344 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Cover</title>
+  <meta name="description" content="The Future of Learning is Here">
+  <meta name="author" content="RPS">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <style type="text/css">
+    body{
+      margin:0;
+      padding:0;
+      font-family: 'Rubik', sans-serif;
+      min-width: 950px;
+    }
+
+    @font-face {
+      font-family: 'Rubik';
+      src: url(fonts/rubik/Rubik-Light.ttf);
+      font-weight: 300;
+    }
+
+
+    @font-face {
+      font-family: 'Rubik';
+      src: url(fonts/rubik/Rubik-Regular.ttf);
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: 'Rubik';
+      src: url(fonts/rubik/Rubik-Medium.ttf);
+      font-weight: 500;
+    }
+
+    @font-face {
+      font-family: 'Rubik';
+      src: url(fonts/rubik/Rubik-Bold.ttf);
+      font-weight: 700;
+    }
+
+    @font-face {
+      font-family: 'Rubik';
+      src: url(fonts/rubik/Rubik-Black.ttf);
+      font-weight: 900;
+    }
+
+    @font-face {
+      font-family: ProximaNova;
+      src: url('fonts/proxima-nova-58f4b5b9b407b.otf');
+    }
+
+    .wrapper{
+      position: relative;
+    }
+
+    .container{
+      background-color: #000000;
+    }
+
+    .triangle{
+      position: absolute;
+      overflow: hidden;
+    }
+
+    .triangle > div {
+      position: absolute;
+      -ms-transform: rotate(45deg); /* IE 9 */
+      -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+      transform: rotate(45deg);  
+    }
+
+
+    .triangle-1{
+      height: 740px;
+      width: 740px;
+    }
+
+    .triangle-1 .coloured-shape{
+      background-color: #ffffff;
+      top: -70%;
+      left: -70%;
+      height: 140%;
+      width: 140%;  
+    }
+
+    .triangle-2{
+      padding-top: 100%;
+      width: 100%;
+      position: relative;
+      margin-top: -445px;
+    }
+    
+    .triangle-2 .coloured-shape{
+      background-color: #001e61; 
+      top: 31%;
+      left: -75.1%;
+      height: 150%;
+      width: 150%;  
+    }
+
+    .cover-content{
+      background-image: url(img/l1t-cover.png);
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .gradient-overlay{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 100%);
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+      background: linear-gradient(to bottom,  rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+
+    }
+
+    .cover-content .content{
+      position: relative;
+      padding: 60px 50px;
+    }
+
+    .brand-logo{
+      background-image: url(img/brand-logo.png);
+      background-size: 100%;
+      height: 110px;
+      width: 270px;
+      margin-left: 30px;
+    }
+
+    .author{
+      display: block;
+      font-weight: 900;
+    }
+
+    .slogan{
+      margin-top:30px;    
+      margin-bottom: 130px;
+    }
+
+    .slogan .second{
+      color: #132660;
+      font-family: ProximaNova;
+      font-style: italic;
+      font-size: 1.22em;
+    }
+
+    .slogan .first{
+      font-size: 24px;
+      color: #363636;
+      margin-bottom:8px;
+    }
+
+    .date-cover{
+      height: 190px;
+      width: 190px;
+      position: absolute;
+      text-align: center;
+      display: table;
+      left: 260px;
+      color: #363636;
+      font-size: 28px;
+      top: 551px;
+    }
+
+    .date-cover .rotated-box-1{
+      width: 100%;
+      height: 100%;
+      -ms-transform: rotate(45deg); /* IE 9 */
+      -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+      transform: rotate(45deg); 
+      background: #ffffff;
+      position: absolute;
+    }
+
+    .date-cover .rotated-box-2{
+      width: 50%;
+      height: 100%;
+      -ms-transform: rotate(45deg); /* IE 9 */
+      -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+      transform: rotate(45deg); 
+      background: #001e61;
+      position: absolute;
+      top: -53%;
+      left: -28%;
+    }
+
+    .date-cover .rotated-box-3{
+      width: 100%;
+      height: 50%;
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      background: #ffffff;
+      position: absolute;
+      bottom: -28%;
+      left: -53%;
+      -webkit-box-shadow:inset 0 60px 50px -50px rgba(0,0,0,0.5);
+      box-shadow:inset 0 60px 50px -50px rgba(0,0,0,0.5);
+    }
+
+    .date-content{
+      position: relative;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .date-cover .month{
+      display: block;
+      margin: 6px 0;
+      font-weight: bold;
+    }
+
+    .prepared{
+      margin-bottom:500px;
+      font-size: 17px;
+      font-weight: 400;
+
+    }
+
+    .cover-badge{
+      color: #ffffff;
+      background-color: #e1bf13;
+      left: 0;
+      position: absolute;
+      padding-left:40px;
+      height: 208px;
+      margin-bottom: 50px;
+      webkit-box-shadow: 0 13px 26px -13px black;
+      -moz-box-shadow: 0 13px 26px -13px black;
+      box-shadow: 0 13px 26px -13px black;
+      z-index: 1;
+      font-weight: 300;
+    }
+
+    .cover-badge h1{
+      padding: 65px 0;
+      font-weight: 500;
+      font-size: 35px;
+    }
+
+    .cover-badge header{
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .cover-badge::before{
+      content: "";
+      height: 0;
+      position: absolute;
+      right: -207px;
+      background-color: transparent;
+      width: 0;
+      top: 0;
+      border-right: 104px solid transparent;
+      border-top: 104px solid transparent;
+      border-left: 104px solid #e1bf13;
+      border-bottom: 104px solid #e1bf13;
+      webkit-box-shadow: 0 40px 25px -40px black;
+      -moz-box-shadow: 0 40px 25px -40px black;
+      box-shadow: 0 40px 25px -40px black;
+    }
+
+    .cover-badge::after{
+      content: "";
+      height: 0;
+      position: absolute;
+      right: -207px;
+      background-color: transparent;
+      width: 0;
+      bottom: -60px;
+      border-right: 30px solid transparent;
+      border-top: 30px solid #8e7904;
+      border-left: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+    }
+
+    .cover-badge.cb-1{
+      width: 390px;
+    }
+
+    .cover-badge.cb-2{
+      padding:40px;
+      height: 128px;
+      font-size: 22px;
+      width: 604px;    
+      margin-top: 254px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="cover-content">
+        <div class="gradient-overlay">
+        </div>
+        <div class="triangle triangle-1">
+          <div class="coloured-shape">
+          </div>
+        </div>
+        <div class="date-cover">
+          <div class="rotated-box-1"></div>
+          <div class="rotated-box-2"></div>
+          <div class="rotated-box-3"></div>
+          <div class="date-content">10 <span class="month">APRIL</span>2017</div>
+        </div>
+        <div class="content">
+          <div class="brand-logo">
+          </div>
+          <div class="slogan">
+            <div class="first">THE FUTURE OF LEARNING IS HERE</div>
+            <div class="second">Learn from the comfort of your home</div>
+          </div>
+          <div class="prepared">
+            Prepared for:
+            <span class="author">Noor Fahmie Mahadi</span>
+            10-04-2017
+          </div>
+          <div class="cover-badge cb-1">
+            <h1>360&deg; Influence Profiler</h1>
+          </div>
+          <div class="cover-badge cb-2">
+            <header>Real-Time Learning in a Virtual Environment</header>
+            learn1thing.com is the E-commerce store dedicated to give a wholesome &amp; engaging learning experience. <br/>The various learning tools, provide an ideal opportunity for those who seek to future-proof themselves.
+          </div>
+        </div>
+        <div class="triangle triangle-2">
+          <div class="coloured-shape">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

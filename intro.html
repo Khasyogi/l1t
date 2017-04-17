@@ -1,0 +1,324 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Intro</title>
+  <meta name="description" content="The Future of Learning is Here">
+  <meta name="author" content="RPS">
+  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <style type="text/css">
+    body{
+      margin:0;
+      padding:0;
+      font-family: 'Rubik', sans-serif;
+      min-width: 950px;
+    }
+
+    @font-face {
+      font-family: 'Rubik';
+      src: url(fonts/rubik/Rubik-Light.ttf);
+      font-weight: 300;
+    }
+
+
+    @font-face {
+      font-family: 'Rubik';
+      src: url(fonts/rubik/Rubik-Regular.ttf);
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: 'Rubik';
+      src: url(fonts/rubik/Rubik-Medium.ttf);
+      font-weight: 500;
+    }
+
+    @font-face {
+      font-family: 'Rubik';
+      src: url(fonts/rubik/Rubik-Bold.ttf);
+      font-weight: 700;
+    }
+
+    @font-face {
+      font-family: 'Rubik';
+      src: url(fonts/rubik/Rubik-Black.ttf);
+      font-weight: 900;
+    }
+
+    @font-face {
+      font-family: ProximaNova;
+      src: url('fonts/proxima-nova-58f4b5b9b407b.otf');
+    }
+
+    .wrapper{
+      position: relative;
+    }
+
+    .container{
+      background-color: #ffffff;
+    }
+
+    .intro-content{
+      height: 1650px;
+    }
+
+    .intro-logo{
+      background-image: url(img/brand-logo.png);
+      background-size: 100%;
+      height: 100px;
+      width: 240px;
+      margin: 25px 35px;
+      position: absolute;
+      right: 0;
+    }
+
+    .intro-content header{    
+      display: block;
+      height: 165px;
+    }
+
+    .banner{
+      height: calc(100vh - 165px);
+      min-height: 510px;
+      width: 100%;
+      background-color: #000000;
+      position: relative;
+      background-image: url(img/l1t-cover.png);
+      background-position: top center;
+    }
+
+    .banner-overlay{
+      background-color: #000000;
+      opacity: 0.3;
+      position:absolute;
+      height: 100%;
+      width: 100%;
+    }
+
+    .intro-title{
+      height: 100vh;
+      min-height: 676px;
+      position: absolute;
+      width: calc(100% - 290px);
+      top: 0;
+      overflow:hidden;
+      right: 290px;
+    }
+
+    .shape-2-container{
+      height: calc(100vh - 165px);
+      min-height: 510px;
+      position: absolute;
+      width: calc(100% - 0px);
+      top: 0;
+      overflow: hidden;
+      right: 0px;
+    }
+
+    .shape-3-container{
+      height: 40vh;
+      min-height: 326px;
+      position: absolute;
+      width: calc(100% - 0px);
+      top: 0;
+      overflow: hidden;
+      right: 0px;
+    }
+
+    .shape-1 {
+      border-right: 40px solid rgb(225, 191, 19);
+      width: 1290px;
+      height: 2400px;
+      position: absolute;
+      background-color: #ffffff;
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      top: -927px;
+      right: 565px;
+      transform: rotate(45deg);
+    }
+
+    .shape-2 {
+      border-right: 40px solid #001e61;
+      width: 750px;
+      height: 1890px;
+      position: absolute;
+      background-color: #ffffff;
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      top: -560px;
+      right: 640px;
+      transform: rotate(45deg);
+    }
+
+    .shape-3 {
+      width: 750px;
+      height: 1890px;
+      position: absolute;
+      background-color: #001e61;
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      top: -560px;
+      right: 640px;
+      transform: rotate(45deg);
+    }
+
+    .title-container{
+      background-color: #001e61;
+      color: #ffffff;
+      position: relative;
+      font-weight: 400;
+      font-size: 47px;
+      display: inline-block;
+      padding:8% 0;
+      width: 37%;
+      padding-left: 50px;
+    }
+
+    .article-intro{
+      font-size: 34px;
+      padding: 46px 110px;
+    }
+
+    footer{
+      position: absolute;
+      bottom: 0;
+      background-color: #001e61;
+      height: 165px;
+      width: 100%;
+    }
+
+    footer .intro-title{
+      bottom: 0;
+      top: initial;
+      left: 0px;
+      min-height: auto;
+      height: 210px;
+      width: 460px
+    }
+
+    .l1t-logo-container{
+      height: 130px;
+      position: relative;
+      overflow: hidden;
+      top: 80px;
+      width: 325px;
+    }
+
+    .l1t-logo-container .shape-1{
+      border-right: 40px solid transparent;
+      background-color: #2e2e2e;
+    }
+
+    .l1t-logo{
+      background-image: url(img/l1t-logo.png);
+      height: 130px;
+      position: relative;
+      width: 200px;
+      background-size: 160px;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    .footer-content{
+      color: #ffffff;
+      text-align: right;
+      width: 60%;
+      padding-right: 50px;
+      padding-top: 50px;
+      position: absolute;
+      font-size: 12px;
+      font-weight: 300;
+      padding-left: 270px;
+      right: 0;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    footer .contacts{
+      font-size: 18px;
+      font-weight: 400;
+      margin-top:17px;
+    }
+
+    footer .contacts > span{
+      margin-left: 20px;
+    }
+
+    footer .contacts > span .icon img{
+      width: 30px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    @media screen and (min-width: 1260px) {
+      .title-container{
+        width: auto;
+        padding: 135px 0;
+        padding-left: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="intro-content">
+        <header>
+          <div class="intro-logo">
+          </div>
+        </header>
+        <div class="banner">
+          <div class="banner-overlay">
+          </div>
+        </div>
+        <div class="intro-title">
+          <div class="shape-1"></div>
+          <div class="shape-2-container">
+            <div class="shape-2"></div>
+          </div>
+          <div class="shape-3-container">
+            <div class="shape-3"></div>
+          </div>
+          <div class="title-container">
+            360&deg; Influence Profiler
+          </div>
+        </div>
+        <article class="article-intro">
+          <p>Positive influencing skill is a key trade to have in most of our workplace. Good ideas alone would not be sufficient for you to implement things your way. Be it encouraging your direct reports to increase productivity or influencing our superiors to gain support for your projects.</p>
+          <p>The 360&deg; Influence Profiler is designed to allow you to reflect on what you do on a day-to-day basis when influencing others. It helps highlight your observable strengths and blind spots, based </p>
+        </article>
+        <footer>
+          <div class="intro-title">
+            <div class="shape-1">
+            </div>
+            <div class="l1t-logo-container">
+              <div class="shape-1">
+              </div>
+              <div class="l1t-logo">
+              </div>
+            </div>
+          </div>
+          <div class="footer-content">
+            <p><span class="bold">learn1thing.com</span> is the E-commerce store dedicated to give a wholesome & engaging learning experience. <br/>The various learning tools, provide an ideal opportunity for those who seek to future-proof themselves.</p>
+
+            <div class="contacts">
+              <span><span class="icon"><img src="img/document-icon.png"/></span>store.learn1thing.com</span><span><span class="icon"><img src="img/phone-icon.png"/></span>+65 63238022</span>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="js/scripts.js"></script> -->
+</body>
+</html>
